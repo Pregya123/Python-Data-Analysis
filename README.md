@@ -25,10 +25,10 @@ This project performs comprehensive data analysis and visualization on the Iris 
    
 ## Screenshots
 ### Sepal Length Distribution
-"C:\Users\khushi\Pictures\Screenshots\Screenshot (1).png"
+![Sepal Length Histogram](screenshots/sepal_length_hist.png)
 
 ### Sepal Length vs Sepal Width
-"C:\Users\khushi\Pictures\Screenshots\Screenshot (2).png"
+![Scatter Plot](screenshots/sepal_vs_width.png)
 
 ## Installation
 ### Prerequisites
