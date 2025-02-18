@@ -1,0 +1,38 @@
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Step 1: Load a dataset
+# For this example, we'll use a sample dataset (Iris dataset)
+url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
+data = pd.read_csv(url)
+
+# Step 2: Perform basic data analysis
+print("First 5 rows of the dataset:")
+print(data.head())
+
+print("\nSummary statistics:")
+print(data.describe())
+
+# Step 3: Use NumPy for calculations
+# Calculate the mean of the 'sepal_length' column
+mean_sepal_length = np.mean(data['sepal_length'])
+print(f"\nMean sepal length: {mean_sepal_length}")
+
+# Step 4: Data Visualization
+# Plot a histogram of the 'sepal_length' column
+plt.figure(figsize=(8, 6))
+plt.hist(data['sepal_length'], bins=15, color='blue', edgecolor='black')
+plt.title('Sepal Length Distribution')
+plt.xlabel('Sepal Length')
+plt.ylabel('Frequency')
+plt.show()
+
+# Plot a scatter plot of 'sepal_length' vs 'sepal_width'
+plt.figure(figsize=(8, 6))
+plt.scatter(data['sepal_length'], data['sepal_width'], color='green', alpha=0.5)
+plt.title('Sepal Length vs Sepal Width')
+plt.xlabel('Sepal Length')
+plt.ylabel('Sepal Width')
+plt.show()
